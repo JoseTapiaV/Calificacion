@@ -9,17 +9,15 @@ package ec.edu.ups.clase;
  *
  * @author Jose Tapia
  */
-public class HistorialCalificacion {
+public class HistorialCalificacionEstudiante {
     private Materia materia;
-    private Estudiante est;
     private int aprovechamiento1;
     private int examen1;
     private int aprovechamiento2;
     private int examen2;
 
-    public HistorialCalificacion(Materia materia, Estudiante est, int aprovechamiento1, int examen1, int aprovechamiento2, int examen2) {
+    public HistorialCalificacionEstudiante(Materia materia, Estudiante est, int aprovechamiento1, int examen1, int aprovechamiento2, int examen2) {
         this.materia = materia;
-        this.est = est;
         this.aprovechamiento1 = aprovechamiento1;
         this.examen1 = examen1;
         this.aprovechamiento2 = aprovechamiento2;
@@ -30,10 +28,6 @@ public class HistorialCalificacion {
  
     public void setMateria(Materia materia) {
         this.materia = materia;
-    }
-
-    public void setEst(Estudiante est) {
-        this.est = est;
     }
 
     public void setAprovechamiento1(int aprovechamiento1) {
@@ -57,10 +51,6 @@ public class HistorialCalificacion {
         return materia;
     }
 
-    public Estudiante getEst() {
-        return est;
-    }
-
     public int getAprovechamiento1() {
         return aprovechamiento1;
     }
@@ -79,7 +69,7 @@ public class HistorialCalificacion {
 
     @Override
     public String toString() {
-        return "HistorialCalificacion{" + "materia=" + materia + ", est=" + est + ", aprovechamiento1=" + aprovechamiento1 + ", examen1=" + examen1 + ", aprovechamiento2=" + aprovechamiento2 + ", examen2=" + examen2 + '}';
+        return "HistorialCalificacion{" + "materia=" + materia + ", aprovechamiento1=" + aprovechamiento1 + ", examen1=" + examen1 + ", aprovechamiento2=" + aprovechamiento2 + ", examen2=" + examen2 + '}';
     }
     
 }
