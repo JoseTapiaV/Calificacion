@@ -14,6 +14,8 @@ import java.util.List;
  */
 public class Profesor extends Persona 
 {
+
+    
     private String titulo;
     private double salario;
     private String cargo;
@@ -31,8 +33,8 @@ public class Profesor extends Persona
         super(codigo, nombre, cedula);
     }
 
-    public Profesor(String titulo, double salario, String cargo, int codigo, String nombre, String cedula, String telefono, String dereccion, String correo, Sede sede) {
-        super(codigo, nombre, cedula, telefono, dereccion, correo, sede);
+    public Profesor(String titulo, double salario, String cargo, int codigo, String nombre, String cedula, String telefono, String dereccion, String correo) {
+        super(codigo, nombre, cedula, telefono, dereccion, correo);
         this.titulo = titulo;
         this.salario = salario;
         this.cargo = cargo;
@@ -72,5 +74,9 @@ public class Profesor extends Persona
 
     public String getCargo() {
         return cargo;
+    }
+    @Override
+    public String toString() {
+        return "Profesor{" + "titulo=" + titulo + ", salario=" + salario + ", cargo=" + cargo + '}';
     }
 }

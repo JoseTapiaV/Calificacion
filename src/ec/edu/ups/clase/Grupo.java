@@ -10,10 +10,21 @@ package ec.edu.ups.clase;
  * @author Jose Tapia
  */
 public class Grupo {
+
+  
     private int codigoG;
     private String nomG;
     private int cupo;
 
+    
+    
+    public Grupo(int codigoG, String nomG, int cupo) {
+        this.codigoG = codigoG;
+        this.nomG = nomG;
+        this.cupo = cupo;
+    }
+
+    
     
     public void setCodigoG(int codigoG) {
         this.codigoG = codigoG;
@@ -38,5 +49,9 @@ public class Grupo {
 
     public int getCupo() {
         return cupo;
+    }
+      @Override
+    public String toString() {
+        return "Grupo{" + "codigoG=" + codigoG + ", nomG=" + nomG + ", cupo=" + cupo + '}';
     }
 }

@@ -10,6 +10,8 @@ package ec.edu.ups.clase;
  * @author Jose Tapia
  */
 public class Materia {
+
+   
     private int codigoM;
     private String nombreM;
     private int numCreditos;
@@ -17,6 +19,16 @@ public class Materia {
     private int nivelM;
     private Grupo grupos;
     private Profesor profesores;
+
+    public Materia(int codigoM, String nombreM, int numCreditos, int numHoras, int nivelM) {
+        this.codigoM = codigoM;
+        this.nombreM = nombreM;
+        this.numCreditos = numCreditos;
+        this.numHoras = numHoras;
+        this.nivelM = nivelM;
+        this.grupos = grupos;
+        this.profesores = profesores;
+    }
 
     
     public void setCodigoM(int codigoM) {
@@ -74,5 +86,9 @@ public class Materia {
 
     public Profesor getProfesores() {
         return profesores;
+    }
+     @Override
+    public String toString() {
+        return "Materia{" + "codigoM=" + codigoM + ", nombreM=" + nombreM + ", numCreditos=" + numCreditos + ", numHoras=" + numHoras + ", nivelM=" + nivelM + ", grupos=" + grupos + ", profesores=" + profesores + '}';
     }
 }

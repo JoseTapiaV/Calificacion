@@ -31,14 +31,13 @@ public class Persona {
         this.cedula = cedula;
     }
 
-    public Persona(int codigo, String nombre, String cedula, String telefono, String dereccion, String correo, Sede sede) {
+    public Persona(int codigo, String nombre, String cedula, String telefono, String dereccion, String correo) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.cedula = cedula;
         this.telefono = telefono;
         this.dereccion = dereccion;
         this.correo = correo;
-        this.sede = sede;
     }
 
     
@@ -97,5 +96,10 @@ public class Persona {
 
     public Sede getSede() {
         return sede;
+    }
+
+    @Override
+    public String toString() {
+        return "Persona{" + "codigo=" + codigo + ", nombre=" + nombre + ", cedula=" + cedula + ", telefono=" + telefono + ", dereccion=" + dereccion + ", correo=" + correo + ", sede=" + sede + '}';
     }
 }

@@ -13,6 +13,14 @@ import java.util.List;
  * @author Jose Tapia 
  */
 public class Sede {
+
+    public Sede(int codigoS, String nomS, String direcS, String telfS) {
+        this.codigoS = codigoS;
+        this.nomS = nomS;
+        this.direcS = direcS;
+        this.telfS = telfS;
+    }
+
     private int codigoS;
     private String nomS;
     private String direcS;
@@ -67,5 +75,9 @@ public class Sede {
     
     public void agregarCarrera(Carrera carrera){
        carreras.add(carrera);
-    }    
+    }  
+    @Override
+    public String toString() {
+        return "Sede{" + "codigoS=" + codigoS + ", nomS=" + nomS + ", direcS=" + direcS + ", telfS=" + telfS + ", carreras=" + carreras + '}';
+    }
 }

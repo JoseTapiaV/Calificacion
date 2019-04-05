@@ -13,6 +13,7 @@ import java.util.List;
  * @author Jose Tapia
  */
 public class Carrera {
+
     private int codigoC;
     private String nombreC;
     private List<Materia> materias;
@@ -20,6 +21,14 @@ public class Carrera {
     private int numEst;
     private String Titulo;
 
+    public Carrera(int codigoC, String nombreC, int numSemestre, int numEst, String Titulo) {
+        this.codigoC = codigoC;
+        this.nombreC = nombreC;
+        this.numSemestre = numSemestre;
+        this.numEst = numEst;
+        this.Titulo = Titulo;
+    }
+    
     public Carrera(){
          materias=new ArrayList<>();
     }
@@ -74,5 +83,9 @@ public class Carrera {
     
     public void agregarMateria(Materia materia){
         materias.add(materia);
+    }
+    @Override
+    public String toString() {
+        return "Carrera{" + "codigoC=" + codigoC + ", nombreC=" + nombreC + ", materias=" + materias + ", numSemestre=" + numSemestre + ", numEst=" + numEst + ", Titulo=" + Titulo + '}';
     }
 }
