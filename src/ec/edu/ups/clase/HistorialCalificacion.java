@@ -7,7 +7,7 @@ package ec.edu.ups.clase;
 
 /**
  *
- * @author Domenica Cañizares
+ * @author Jose Tapia
  */
 public class HistorialCalificacion {
     private Materia materia;
@@ -17,7 +17,7 @@ public class HistorialCalificacion {
     private int aprovechamiento2;
     private int examen2;
 
-    //set
+ 
     public void setMateria(Materia materia) {
         this.materia = materia;
     }
@@ -42,7 +42,7 @@ public class HistorialCalificacion {
         this.examen2 = examen2;
     }
 
-    //get
+  
     public Materia getMateria() {
         return materia;
     }
@@ -66,13 +66,4 @@ public class HistorialCalificacion {
     public int getExamen2() {
         return examen2;
     }
-    
-    //to String
-
-    @Override
-    public String toString() {
-        return "HistorialCalificacion{" + "materia=" + materia + ", est=" + est + ", aprovechamiento1=" + aprovechamiento1 + ", examen1=" + examen1 + ", aprovechamiento2=" + aprovechamiento2 + ", examen2=" + examen2 + '}';
-    }
-    
-    
 }

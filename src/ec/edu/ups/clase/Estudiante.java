@@ -10,7 +10,7 @@ import java.util.List;
 
 /**
  *
- * @author Domenica Cañizares
+ * @author Jose Tapia
  */
 public class Estudiante extends Persona 
 {
@@ -18,16 +18,29 @@ public class Estudiante extends Persona
         
     public Estudiante()
     {
-         
+                 
+    }
+    
+    public Estudiante(int codigo)
+    {
+        super(codigo);                
+    }
+        
+    public Estudiante(int codigo, String nombre, String cedula)
+    {
+        super(codigo, nombre, cedula);
     }
 
-    //set
+    public Estudiante(Carrera carrera, int codigo, String nombre, String cedula, String telefono, String dereccion, String correo, Sede sede) {
+        super(codigo, nombre, cedula, telefono, dereccion, correo, sede);
+        this.carrera = carrera;
+    }
+
     public void setCarrera(Carrera carrera)
     {
         this.carrera = carrera;
     }
 
-    //get
     public Carrera getCarrera() 
     {
         return carrera;

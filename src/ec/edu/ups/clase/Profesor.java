@@ -10,19 +10,34 @@ import java.util.List;
 
 /**
  *
- * @author Domenica Cañizares
+ * @author Jose Tapia
  */
-public class Profesor {
+public class Profesor extends Persona 
+{
     private String titulo;
     private double salario;
     private String cargo;
-    private List<Persona> personasP;
-    
-    public Profesor(){
-         personasP=new ArrayList<>();
-     }
+     
+    public Profesor()
+    {
+                 
+    }
 
-    //set
+    public Profesor(int codigo) {
+        super(codigo);
+    }
+
+    public Profesor(int codigo, String nombre, String cedula) {
+        super(codigo, nombre, cedula);
+    }
+
+    public Profesor(String titulo, double salario, String cargo, int codigo, String nombre, String cedula, String telefono, String dereccion, String correo, Sede sede) {
+        super(codigo, nombre, cedula, telefono, dereccion, correo, sede);
+        this.titulo = titulo;
+        this.salario = salario;
+        this.cargo = cargo;
+    }    
+            
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
@@ -35,7 +50,7 @@ public class Profesor {
         this.cargo = cargo;
     }
 
-    //get
+    
     public String getTitulo() {
         return titulo;
     }
@@ -43,14 +58,19 @@ public class Profesor {
     public double getSalario() {
         return salario;
     }
+    
+    public double getSalario(int horasTrabajadas, double valorPorHora)
+    {
+        return salario+(horasTrabajadas*valorPorHora);
+    }
+    
+    public double getSalario(double comision)
+    {
+        return salario+comision;
+    }
+          
 
     public String getCargo() {
         return cargo;
     }
-    
-    public void agregarPersona(Persona personaP){
-        personasP.add(personaP);
-    }
-    
-    
 }

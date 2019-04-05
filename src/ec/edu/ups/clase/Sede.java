@@ -10,7 +10,7 @@ import java.util.List;
 
 /**
  *
- * @author Domenica Cañizares
+ * @author Jose Tapia 
  */
 public class Sede {
     private int codigoS;
@@ -23,7 +23,7 @@ public class Sede {
          carreras=new ArrayList<>();
      }
 
-    //set
+
     public void setCodigoS(int codigoS) {
         this.codigoS = codigoS;
     }
@@ -44,8 +44,7 @@ public class Sede {
         this.carreras = carreras;
     }
     
-    
-    //get
+   
     public int getCodigoS() {
         return codigoS;
     }
@@ -66,17 +65,7 @@ public class Sede {
         return carreras;
     }
     
-    
     public void agregarCarrera(Carrera carrera){
        carreras.add(carrera);
-    }
-    
-    //to String
-
-    @Override
-    public String toString() {
-        return "Sede{" + "Codigo Sede= " + codigoS + ", Nombre Sede= " + nomS + ", Direccion Sede=" + direcS + ", Telfono Sede= " + telfS + ", carreras=" + carreras + '}';
-    }
-    
-    
+    }    
 }

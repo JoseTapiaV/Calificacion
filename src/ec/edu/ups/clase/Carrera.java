@@ -10,7 +10,7 @@ import java.util.List;
 
 /**
  *
- * @author Domenica Cañizares
+ * @author Jose Tapia
  */
 public class Carrera {
     private int codigoC;
@@ -22,9 +22,8 @@ public class Carrera {
 
     public Carrera(){
          materias=new ArrayList<>();
-     }
+    }
     
-    //set
     public void setCodigoC(int codigoC) {
         this.codigoC = codigoC;
     }
@@ -49,7 +48,6 @@ public class Carrera {
         this.Titulo = Titulo;
     }
 
-    //get
     public int getCodigoC() {
         return codigoC;
     }
@@ -77,13 +75,4 @@ public class Carrera {
     public void agregarMateria(Materia materia){
         materias.add(materia);
     }
-    
-    //to Stirng
-
-    @Override
-    public String toString() {
-        return "Carrera{" + "codigoC=" + codigoC + ", nombreC=" + nombreC + ", materias=" + materias + ", numSemestre=" + numSemestre + ", numEst=" + numEst + ", Titulo=" + Titulo + '}';
-    }
-    
-    
 }

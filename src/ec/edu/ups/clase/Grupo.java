@@ -7,14 +7,14 @@ package ec.edu.ups.clase;
 
 /**
  *
- * @author Domenica Cañizares
+ * @author Jose Tapia
  */
 public class Grupo {
     private int codigoG;
     private String nomG;
     private int cupo;
 
-    //set
+    
     public void setCodigoG(int codigoG) {
         this.codigoG = codigoG;
     }
@@ -27,7 +27,7 @@ public class Grupo {
         this.cupo = cupo;
     }
 
-    //get
+    
     public int getCodigoG() {
         return codigoG;
     }
@@ -39,13 +39,4 @@ public class Grupo {
     public int getCupo() {
         return cupo;
     }
-    
-    //to String
-
-    @Override
-    public String toString() {
-        return "Grupo{" + "Codigo Grupo= " + codigoG + ", Nombre Grupo= " + nomG + ", Cupo= " + cupo + '}';
-    }
-    
-    
 }

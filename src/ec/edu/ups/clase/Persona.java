@@ -7,7 +7,7 @@ package ec.edu.ups.clase;
 
 /**
  *
- * @author Domenica Cañizares
+ * @author Jose Tapia
  */
 public class Persona {
     private int codigo;
@@ -18,7 +18,31 @@ public class Persona {
     private String correo;
     private Sede sede;
 
-    //set
+    public Persona() {
+    }
+
+    public Persona(int codigo) {
+        this.codigo = codigo;
+    }
+
+    public Persona(int codigo, String nombre, String cedula) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.cedula = cedula;
+    }
+
+    public Persona(int codigo, String nombre, String cedula, String telefono, String dereccion, String correo, Sede sede) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.cedula = cedula;
+        this.telefono = telefono;
+        this.dereccion = dereccion;
+        this.correo = correo;
+        this.sede = sede;
+    }
+
+    
+    
     public void setCodigo(int codigo) {
         this.codigo = codigo;
     }
@@ -47,7 +71,6 @@ public class Persona {
         this.sede = sede;
     }
 
-    //get
     public int getCodigo() {
         return codigo;
     }
@@ -75,6 +98,4 @@ public class Persona {
     public Sede getSede() {
         return sede;
     }
-    
-    
 }
