@@ -33,8 +33,8 @@ public class Profesor extends Persona
         super(codigo, nombre, cedula);
     }
 
-    public Profesor(String titulo, double salario, String cargo, int codigo, String nombre, String cedula, String telefono, String dereccion, String correo) {
-        super(codigo, nombre, cedula, telefono, dereccion, correo);
+    public Profesor(String titulo, double salario, String cargo, int codigo, String nombre, String cedula, String telefono, String direccion, String correo) {
+        super(codigo, nombre, cedula, telefono, direccion, correo);
         this.titulo = titulo;
         this.salario = salario;
         this.cargo = cargo;
