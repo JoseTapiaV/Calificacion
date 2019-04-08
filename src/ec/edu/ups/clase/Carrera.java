@@ -16,7 +16,7 @@ public class Carrera {
 
     private int codigoC;
     private String nombreC;
-    private List<Materia> materias;
+    private List<Materia> materias=new ArrayList();
     private int numSemestre;
     private int numEst;
     private String Titulo;
@@ -29,9 +29,7 @@ public class Carrera {
         this.Titulo = Titulo;
     }
     
-    public Carrera(){
-         materias=new ArrayList<>();
-    }
+    
     
     public void setCodigoC(int codigoC) {
         this.codigoC = codigoC;
@@ -86,6 +84,6 @@ public class Carrera {
     }
     @Override
     public String toString() {
-        return "Carrera{" + "codigoC=" + codigoC + ", nombreC=" + nombreC + ", materias=" + materias + ", numSemestre=" + numSemestre + ", numEst=" + numEst + ", Titulo=" + Titulo + '}';
+        return "\nCarreras:" + "\nCodigo Carrera=" + codigoC + "\nNombre Carrera=" + nombreC + "\nMaterias=" + materias + "\nNumero de Semestres=" + numSemestre + "\nNumero de Estudiantes=" + numEst + "\nTitulo=" + Titulo + '.';
     }
 }

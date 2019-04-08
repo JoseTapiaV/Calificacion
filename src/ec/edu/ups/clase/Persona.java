@@ -14,7 +14,7 @@ public class Persona {
     private String nombre;
     private String cedula;
     private String telefono;
-    private String dereccion;
+    private String direccion;
     private String correo;
     private Sede sede;
 
@@ -36,7 +36,7 @@ public class Persona {
         this.nombre = nombre;
         this.cedula = cedula;
         this.telefono = telefono;
-        this.dereccion = dereccion;
+        this.direccion = dereccion;
         this.correo = correo;
     }
 
@@ -59,7 +59,7 @@ public class Persona {
     }
 
     public void setDereccion(String dereccion) {
-        this.dereccion = dereccion;
+        this.direccion = dereccion;
     }
 
     public void setCorreo(String correo) {
@@ -87,7 +87,7 @@ public class Persona {
     }
 
     public String getDereccion() {
-        return dereccion;
+        return direccion;
     }
 
     public String getCorreo() {
@@ -100,6 +100,6 @@ public class Persona {
 
     @Override
     public String toString() {
-        return "Persona{" + "codigo=" + codigo + ", nombre=" + nombre + ", cedula=" + cedula + ", telefono=" + telefono + ", dereccion=" + dereccion + ", correo=" + correo + ", sede=" + sede + '}';
+        return "\nPersona:" + "\nCodigo=" + codigo + "\nNombre=" + nombre + "\nCedula=" + cedula + "\nTelefono=" + telefono + "\nDireccion=" + direccion + "\nCorreo=" + correo + "\nSede=" + sede + '.';
     }
 }

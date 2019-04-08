@@ -13,22 +13,22 @@ import java.util.List;
  * @author Jose Tapia 
  */
 public class Sede {
-
+    
+    private int codigoS;
+    private String nomS;
+    private String direcS;
+    private String telfS;
+    private List<Carrera> carreras=new ArrayList();
+    
     public Sede(int codigoS, String nomS, String direcS, String telfS) {
         this.codigoS = codigoS;
         this.nomS = nomS;
         this.direcS = direcS;
         this.telfS = telfS;
     }
-
-    private int codigoS;
-    private String nomS;
-    private String direcS;
-    private String telfS;
-    private List<Carrera> carreras;
     
     public Sede(){
-         carreras=new ArrayList<>();
+        
      }
 
 
@@ -78,6 +78,6 @@ public class Sede {
     }  
     @Override
     public String toString() {
-        return "Sede{" + "codigoS=" + codigoS + ", nomS=" + nomS + ", direcS=" + direcS + ", telfS=" + telfS + ", carreras=" + carreras + '}';
+        return "\nSede: \n" + "Codigo Sede=" + codigoS + "\nNombre Sede=" + nomS + "\nDireccion Sede=" + direcS + "\nTelefono Sede=" + telfS + "\nCarreras=" + carreras + '.';
     }
 }
